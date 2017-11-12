@@ -1,0 +1,615 @@
+/************************
+[Master Stylesheet]
+Project: BruxZir.com (Bootstrap Re-build)
+Version:	0.1
+Last change: 11-5-14
+Assigned to: Jason Jennings
+Primary use: Public Facing Site
+*********************** */
+
+/*------------------------------------------------------------------
+# [Color Notes]
+# Primary Color: #ba222b  (bruxzir red)
+# Secondary Color: #ffeda1  (chick yellow)
+# Dark grey: #444
+# 
+------------------------------------------------------------------*/
+/* Color Setters
+================================================== */
+.color-1 {
+	color: #ba222b;
+}
+.color-bg-1 {
+	background-color: #ba222b;
+}
+.color-2 {
+	color: #ffeda1;
+}
+.color-bg-2 {
+	background-color: #ffeda1;
+}
+
+/* Maui Custome Styles
+================================================== */
+.no-pad {
+	padding: 0;
+}
+.row.no-gut {
+	margin-right:0;
+	margin-left:0;
+}
+	.row.no-gut > [class*='col-'] {
+		padding-right:0;
+		padding-left:0;
+	}
+.img-center {
+	margin-left: auto;
+	margin-right: auto;
+}
+.tetx-center {
+	text-align: center;
+}
+
+/* Maui Carousel Styles 
+================================================== */
+.noshade-right {
+	right: 0;
+	left: auto;
+}
+.noshade-left {
+
+}
+.carousel-caption {
+	position: initial;
+	text-align: left;
+	font-size: 18px;
+	padding: 0 0 20px;
+	text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+}
+.carousel-caption p {
+	margin-bottom: 10px;
+	padding: 15px;
+	background: #eee;
+	margin-top: 20px;
+	border: solid 1px #aaa;
+	color: #000; 
+}
+.carousel-inner {
+	background: #fff;
+	padding-top: 0px;
+}
+.carousel-indicators {
+	bottom: 10px;
+	margin-bottom: 0!important; /*Overriding Bootstrap ol class*/
+	display: none;
+}
+.carousel-control {
+	color: #ba222b;
+}
+.carousel-control:hover {
+	color: #000;
+}
+
+/*------------------------------------------------------------------
+[Typography Notes]
+Body copy:		1.2em/1.6em Verdana, Helvetica, Arial, Geneva, sans-serif;
+Headers:		2.7em/1.3em Helvetica, Arial, "Lucida Sans Unicode", Verdana, sans-serif;
+Input, textarea:	1.1em Helvetica, Verdana, Geneva, Arial, sans-serif;
+Sidebar heading:	1.5em Helvetica, Trebuchet MS, Arial, sans-serif;
+Notes:	decreasing heading by 0.4em with every subsequent heading level
+-------------------------------------------------------------------*/
+/* Typography
+================================================== */
+h1, h2, h3, h4 {
+	font-weight: bold!important;
+}
+body {
+	font-size: 18px;
+}
+	body p{
+		line-height: 24px;
+	}
+
+/* Header
+================================================== */
+.mapheader {
+	height: 160px;
+	width: 100%;
+	background-image: url(/wordpress/wp-content/uploads/2016/05/header-banner.jpg);
+	background-position: center;
+}
+/* Navigation
+================================================== */
+a {
+	color: #fff;
+}
+p a {
+	color: #ba222b;
+}
+	p a:hover {
+		color: #000;
+	}
+.topnavbar {
+	background: #444;
+	height: auto;
+}
+	.topnavbar ul {
+		margin-bottom: 0;
+	} 
+		.topnavbar ul li {
+			display: inline-block;
+			margin: 10px;
+			font-size: 1.2em;
+		} 
+			.topnavbar ul li a {
+				margin: 8px;
+				font-weight: bold;
+			} 
+			.topnavbar ul li a:hover {
+				color: #000;
+				text-decoration: none;
+			}
+.topnavbarred {
+background: #ba222b;
+height: auto;
+}
+	.topnavbarred ul {
+		margin-bottom: 0;
+	} 
+		.topnavbarred ul li {
+			display: inline-block;
+			margin: 10px;
+			font-size: 1.2em;
+		} 
+			.topnavbarred ul li a {
+				/*margin: 8px;*/
+			} 
+			.topnavbarred ul li a:hover {
+				color: #000;
+				text-decoration: none;
+			}
+.tablet-up-pull-right {
+	float: right;
+}
+.floatbtn {
+	background-color: #000;
+	margin: 10px;
+	padding: 10px;
+	font-size: 2em;
+	color: #fff;
+	border-left: #BA222B solid 10px;
+	text-decoration: none;
+}
+	.floatbtn:hover{
+		text-decoration: none;
+		background: #444;
+	}
+.navlabel {
+	margin-top: 6px;
+}
+.bannerad {
+	margin: 10px 0;
+}
+.secondmenu a {
+	color: #000;
+	text-decoration: none;
+}
+.dropdown-lable {
+	float: left;
+	margin: 10px 0 0 20%;
+	font-size: 1.2em;
+	color: #fff;
+	text-shadow: 0 1px 1px rgba(0,0,0,.5);
+}
+.sitemap-link {
+	color: #ba222b;
+}
+
+/* Banners
+================================================== */
+.homebanner, .bridgebanner, .anteriorbanner, .fullarchbanner, .bruxzirnowbanner, .girlsbanner, .implantsbanner, .catalogbanner  {
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: left bottom;
+	display: block;
+	padding-bottom: 0;
+	height: 600px;
+}
+	.homebanner, .bridgebanner, .anteriorbanner, .fullarchbanner, .bruxzirnowbanner, .girlsbanner, .implantsbanner, .catalogbanner img {
+		width: 100%;
+	}
+.homebanner {
+	background-image: url(../img/hb-1800.jpg);
+	}
+.bridgebanner {
+	background-image: url(../img/banner-1800.jpg);
+	}
+.anteriorbanner {
+	background-image: url(../img/anteriorbanner.jpg);
+	}	
+.fullarchbanner {
+	background-image: url(../img/banner-1800-full-arch.jpg);
+	}	
+.bruxzirnowbanner {
+	background-image: url(../img/bruxzir-now-banner-revised.jpg);
+}
+.girlsbanner {
+	background-image: url(../img/banner-1800-girls.jpg);
+	}
+.implantsbanner {
+	background-image: url(../img/banner-1800-implants.jpg);
+	}
+.catalogbanner {
+	background-image: url(../img/banner-1800-catalog.jpg);
+	}
+.hidewhenbig {
+	display: none;
+}
+.slide {
+	cursor: pointer;
+}
+/*.hidesmall {
+	margin: 0;
+	height: 540px;
+}*/
+/* Content
+================================================== */
+.ifu {
+	margin-bottom: 10px;
+	-webkit-box-shadow: 0px 2px 5px 1px rgba(80,96,112,0.5);
+	-moz-box-shadow: 0px 2px 5px 1px rgba(80,96,112,0.5);
+	box-shadow: 0px 2px 5px 1px rgba(80,96,112,0.5);
+}
+.folding {
+	height: 640px;
+}
+@media (max-width: 990px) {
+		.folding {
+			height: 620px;
+		}
+	}
+.compair a {
+	font-size: 16px;
+	color: #ba222b;
+	text-decoration: none;
+}
+.compair {
+	text-align: center;
+}
+.top-padding {
+	padding-top: 40px;
+}
+.redbtn {
+	width: 300px;
+	background: #ba222b;
+	padding: 6px;
+	margin: 10px 0 30px 0;
+	border: #ba222b 2px solid;
+	font-size: 18px;
+	color: #fff;
+	text-decoration: none;
+}
+	.redbtn:hover {
+		color: #000;
+		background: #fff;
+		text-decoration: none;
+	}
+	
+.graybtn {
+	width: 300px;
+	background: #444;
+	padding: 6px;
+	margin: 10px 0 30px 0;
+	border: #444 2px solid;
+	font-size: 18px;
+	color: #fff;
+	text-decoration: none;
+}
+	.graybtn:hover {
+		color: #000;
+		background: #fff;
+		text-decoration: none;
+	}
+		
+.yellowbutton {
+	width: 100%;
+	background: #ffeda1;
+	padding: 6px;
+	margin: 10px 0;
+	border: #444 1px solid;
+	font-size: 18px;
+	color: #000;
+	text-decoration: none;
+}
+.yellowbutton a {
+	color: #000;
+	text-decoration: none;
+}
+.yellowbutton:hover {
+	background: #fff;
+}
+.yellowtext {
+	color: #ffeda1;
+	font-weight: bold;
+	text-decoration: none;
+}
+.yellowtext a:hover{
+	text-decoration: none;
+}
+.remove-underline {
+	text-decoration: none;
+}
+.remove-underline:hover {
+	text-decoration: none;
+}
+.video-stage {
+	height: 0;
+	width: 100%;
+	padding-bottom: 56.25%;
+	position: relative;
+}
+.video-stage iframe {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.supersmalltext {
+	font-size: 10px;
+}
+.map-box {
+	margin-top: 30px; 
+}
+.map-box p{
+	float: right;
+	font-style: italic;
+}
+#question-result {
+	display: none;
+}
+.quote {
+	font-style: italic;
+	font-size: 22px;
+	margin-top: 50px;
+	padding: 0 40px;
+	line-height: 28px;
+	color: #333;
+}
+.quote span {
+	font-size: 18px;
+	font-style: normal;
+	color: #666;
+}
+.finger-for-link {
+	cursor: pointer;
+}
+.sitemap a{
+	color: #000;
+	text-decoration: none;
+}
+	.sitemap a:hover{
+		color: #555;
+		text-decoration: none;
+	}
+
+/* Modal
+================================================== */
+.modal-body p {
+	padding: 20px;
+}
+
+/* Footer
+================================================== */
+.bottomnavbar {
+	background: #444;
+	height: auto;
+	margin-top: 40px;
+}
+	.bottomnavbar ul {
+		margin-bottom: 0;
+	}
+		.bottomnavbar ul li {
+			display: inline-block;
+			padding: 0 18px;
+		}
+			.bottomnavbar ul li a:hover{
+				color: #aaa;
+				text-decoration: none;
+			}
+.videobanner-fullwidth {
+	height: 210px;
+	width: 100%;
+	background-image: url(/wordpress/wp-content/uploads/2016/05/video-background.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #fff;
+}
+.videobanner-fullwidth p {
+	text-align: center;
+}
+.videobanner-fullwidth h3 {
+	text-align: center;
+}
+.hammervideostyles {
+	background-color: rgba(30,30,4, 0.6);
+	height: 100%;
+}
+	.hammervideostyles h4 {
+		color: #000;
+	}
+	.hammervideostyles a:hover {
+		color: #fff;
+	}
+.footer {
+	font-size: 12px;
+	line-height: 24px;
+}
+.footer a {
+	color: #000;
+	text-decoration: none;
+}
+.footer ul li a {
+	margin-left: 6px;
+}
+.footer ul li a:hover {
+	margin-left: 6px;
+	color: #444;
+}
+.footer ul {
+	list-style-type: none;
+	padding-left: 0; 
+}
+.play {
+	display: block;
+	padding: 10px;
+	border: solid 2px #fff;
+	width: 90px;
+	border-radius: 10px;
+	text-align: center;
+	font-size: 24px;
+}
+
+/* Form
+================================================== */
+.contact-form {
+  border: #c2c0c0 1px solid;
+  padding: 10px 2% 0 2%;
+  max-width: 100%;
+}
+
+.contact-form textarea, .contact-form input[type="text"] { width: 96%; }
+
+.contact-email {
+  display: inline-block;
+  margin: 0 40px 0 0;
+  float: left;
+}
+.contact-question {
+  float: left;
+  display: inline-block;
+}
+.red-text{
+	color: #ba222b;
+}
+/* Overrides
+================================================== */
+.navbar-default {
+	background-color: #ddd;
+}
+.navbar-default {
+	border-color: #444;
+	background: #444;
+}
+.navbar-default .navbar-toggle {
+	border-color: #ddd;
+}
+.navbar-default .navbar-nav>li>a {
+	background: #fff;
+	font-size: 22px;
+	height: 38px;
+}
+.navbar-default .navbar-nav>li>a:hover {
+	background: #ba222b;
+	color: #fff;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	border-color: #444;
+}
+.container-fluid {
+	padding: 0;
+}
+.container-fluid>.navbar-header {
+	margin: 0;
+}
+.container-fluid>.navbar-collapse {
+	margin: 0;
+}
+.navbar-nav {
+	margin: 0 -15px;
+}
+.navbar-toggle {
+	border: solid 2px #444;
+}
+/* 404 Page Styles
+================================================== */
+ .grad404 {
+      background: #e7dca5; /* Old browsers */
+      /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+      background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2U3ZGNhNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjM1JSIgc3RvcC1jb2xvcj0iI2UwYTU1NiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjczJSIgc3RvcC1jb2xvcj0iI2I2MWMxYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNhMzE4MWEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+      background: -moz-linear-gradient(left,  #e7dca5 0%, #e0a556 35%, #b61c1c 73%, #a3181a 100%); /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, right top, color-stop(0%,#e7dca5), color-stop(35%,#e0a556), color-stop(73%,#b61c1c), color-stop(100%,#a3181a)); /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(left,  #e7dca5 0%,#e0a556 35%,#b61c1c 73%,#a3181a 100%); /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(left,  #e7dca5 0%,#e0a556 35%,#b61c1c 73%,#a3181a 100%); /* Opera 11.10+ */
+      background: -ms-linear-gradient(left,  #e7dca5 0%,#e0a556 35%,#b61c1c 73%,#a3181a 100%); /* IE10+ */
+      background: linear-gradient(to right,  #e7dca5 0%,#e0a556 35%,#b61c1c 73%,#a3181a 100%); /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7dca5', endColorstr='#a3181a',GradientType=1 ); /* IE6-8 */
+      height: 60px;
+      padding: 12px;
+      margin-bottom: 16px;
+    }
+    .grad404 h3 {
+    	margin: 0;
+    	color: #fff;
+    	font-size: 26px;
+    }
+ .errorpage ul {
+ 	width: 100%;
+ }
+	 .errorpage ul li{
+	 	display: block;
+	 	margin: 16px 0;
+	 }
+
+
+/* Announcements
+================= */
+#announcementbar{
+	background: #BA222B; 	/*change background color of announcement bar to match colors of your site but also make the announcement bar stand out*/
+	color: white; /*change text color of announcement bar so that it is visible on top of your chosen background color*/
+	height: 40px;
+	top: 0;
+	width: 100%;
+	padding-top: 8px;
+	text-align: center;
+	display: none;
+	vertical-align: middle;
+	border: 0;
+}
+.close-announcement{
+	float: right;
+	background-color: transparent;
+	margin-right: 5px;
+	color: #fff;
+}
+/* Browser Update Notification Script from https://browser-update.org
+================= */
+.buorg {
+	position:absolute;
+	width:100%;
+	top:0px;
+	left:0px;
+	border-bottom:1px solid #A29330;
+	background:#FDF2AB no-repeat 1em 0.55em url(http://browser-update.org/img/dialog-warning.gif);
+text-align:left;
+	cursor:pointer;
+	font-family: Arial,Helvetica,sans-serif; color:#000;
+	font-size: 12px;
+}
+.buorg div {
+	padding:5px 36px 5px 40px;
+}
+.buorg a {
+	color:#E25600;
+}
+#buorgclose {
+	position: absolute;
+	right: .5em;
+	top:.2em;
+	height: 20px;
+	width: 12px;
+	font-weight: bold;
+	font-size:14px;
+	padding:0;
+}
